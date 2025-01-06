@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Your Signup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333333;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            width: 150px;
+        }
+        .header h1 {
+            font-size: 24px;
+            color: #4CAF50;
+        }
+        .content {
+            text-align: center;
+        }
+        .content h2 {
+            font-size: 20px;
+            color: #333333;
+        }
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        .button-link {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .button-link:hover {
+            background-color: #45a049;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777777;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <img src="loge.png" >
+            <h1>Welcome to SkillForge! 🎉</h1>
+        </div>
+        <div class="content">
+            <h2>Confirm your signup</h2>
+            <p>Follow this link to confirm your user:</p>
+            <p>
+                <a href="{{ .ConfirmationURL }}" class="button-link">Confirm your mail</a>
+            </p>
+        </div>
+        <div class="footer">
+            <p>If you didn’t sign up for SkillForge, please ignore this email.</p>
+            <p>- The SkillForge Team</p>
+        </div>
+    </div>
+</body>
+</html>
